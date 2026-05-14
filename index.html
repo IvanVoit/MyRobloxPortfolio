@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Roblox Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
@@ -12,7 +12,7 @@
     <!-- Navigation -->
     <nav>
         <div class="container">
-            <h1>Your Name</h1>
+            <h1>Ivan</h1>
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -24,46 +24,66 @@
     <!-- Hero/About Section -->
     <header id="about">
         <div class="container">
-            <h2>Creative Developer & Designer</h2>
-            <p>Welcome to my portfolio. I specialize in building clean, functional, and user-centric web experiences. Below you will find a selection of my latest work and the technologies I use.</p>
+            <h2>About Me</h2>
+            <p>Welcome to my portfolio.
+I'm Ivan, a starting roblox developer interested in building, low-poly 3D modeling, and game creation. I create environments and assets in Blender and work on interactive projects ranging from Roblox experiences to web-based games. I also have experience working with AI-assisted scripting workflows and modifying existing systems when needed.</p>
         </div>
     </header>
 
     <!-- Projects Section -->
     <section id="projects">
         <div class="container">
-            <h2 class="section-title">My Projects</h2>
+            <h2 class="section-title">My Creations</h2>
             
             <div class="project-grid">
+                
                 <!-- Project 1 -->
                 <div class="project-card">
-                    <img src="https://via.placeholder.com/400x250" alt="Project One">
+                    <img src="images/project1-main.jpg" class="main-thumb" alt="Project 1">
                     <div class="project-info">
-                        <h3>Project Name One</h3>
-                        <p>A brief description of what this project does, the problem it solves, and the tech stack used (e.g., React, Node.js).</p>
-                        <a href="#" class="btn">View Project</a>
+                        <h3>Game Title One</h3>
+                        <p>Short summary: A simulator game with 1M+ visits.</p>
+                        <button class="btn toggle-details">View Project Details</button>
+                    </div>
+                    
+                    <!-- Hidden Dropdown Content -->
+                    <div class="project-details">
+                        <div class="details-inner">
+                            <h4>About this Project</h4>
+                            <p>This is a large description of the project. I handled all the Luau scripting, including the DataStores, Pet system, and UI animations. I worked with a team of three to bring this vision to life over 4 months.</p>
+                            
+                            <div class="image-gallery">
+                                <img src="images/p1-ss1.jpg" alt="Screenshot 1">
+                                <img src="images/p1-ss2.jpg" alt="Screenshot 2">
+                                <img src="images/p1-ss3.jpg" alt="Screenshot 3">
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Project 2 -->
                 <div class="project-card">
-                    <img src="https://via.placeholder.com/400x250" alt="Project Two">
+                    <img src="images/project2-main.jpg" class="main-thumb" alt="Project 2">
                     <div class="project-info">
-                        <h3>Project Name Two</h3>
-                        <p>Detailed description of your second project. Focus on your specific contribution and the results achieved.</p>
-                        <a href="#" class="btn">View Project</a>
+                        <h3>Map Commissions</h3>
+                        <p>Low-poly environmental design for an RPG.</p>
+                        <button class="btn toggle-details">View Project Details</button>
+                    </div>
+                    
+                    <div class="project-details">
+                        <div class="details-inner">
+                            <h4>Project Scope</h4>
+                            <p>Provide a long description here. Talk about the lighting settings you used in Roblox Studio, the parts count, and how you optimized the map for mobile players.</p>
+                            
+                            <div class="image-gallery">
+                                <img src="images/p2-ss1.jpg" alt="Screenshot 1">
+                                <img src="images/p2-ss2.jpg" alt="Screenshot 2">
+                                <img src="images/p2-ss3.jpg" alt="Screenshot 3">
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <img src="https://via.placeholder.com/400x250" alt="Project Three">
-                    <div class="project-info">
-                        <h3>Project Name Three</h3>
-                        <p>A description of your third project. Highlight any unique features or complex APIs you integrated.</p>
-                        <a href="#" class="btn">View Project</a>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
