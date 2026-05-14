@@ -1,21 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Find all buttons with the class 'toggle-details'
     const buttons = document.querySelectorAll('.toggle-details');
 
     buttons.forEach(button => {
-        button.addEventListener('click', () => {
-            // Find the project card this button belongs to
-            const card = button.closest('.project-card');
+        button.onclick = function() {
+            // Find the closest card
+            const card = this.closest('.project-card');
+            // Find the details div inside that card
             const details = card.querySelector('.project-details');
             
-            // Toggle the 'active' class to slide open/shut
+            // Toggle the 'active' class
             details.classList.toggle('active');
 
-            // Change button text based on state
+            // Change the button text
             if (details.classList.contains('active')) {
-                button.textContent = 'Close Details';
+                this.textContent = 'Close Details';
             } else {
-                button.textContent = 'View Project Details';
+                this.textContent = 'View Project Details';
             }
-        });
+        };
     });
 });
