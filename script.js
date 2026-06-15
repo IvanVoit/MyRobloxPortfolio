@@ -1,43 +1,44 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
-    // 1. DROPDOWN LOGIC
+
+    // 1. ACCORDION — toggle project details
     const buttons = document.querySelectorAll('.toggle-details');
 
     buttons.forEach(button => {
-        button.onclick = function() {
+        button.addEventListener('click', function () {
             const card = this.closest('.project-card');
             const details = card.querySelector('.project-details');
+            const isOpen = details.classList.contains('active');
+
             details.classList.toggle('active');
-            
-            if (details.classList.contains('active')) {
-                this.textContent = 'Close Details';
-            } else {
-                this.textContent = 'View Project Details';
-            }
-        };
+            this.textContent = isOpen ? 'View Details' : 'Close Details';
+        });
     });
 
-    // 2. IMAGE ZOOM LOGIC
-    const modal = document.getElementById("image-modal");
-    const modalImg = document.getElementById("full-image");
-    const closeBtn = document.querySelector(".close-modal");
+    // 2. IMAGE ZOOM MODAL
+    const modal = document.getElementById('image-modal');
+    const modalImg = document.getElementById('full-image');
+    const closeBtn = document.querySelector('.close-modal');
 
-    // Select every image inside your project cards
-    const images = document.querySelectorAll('.project-card img');
-
-    images.forEach(img => {
-        img.onclick = function() {
-            modal.style.display = "block";
-            modalImg.src = this.src; // Sets the zoomed image to the one you clicked
-        }
+    document.querySelectorAll('.project-card img').forEach(img => {
+        img.addEventListener('click', function (e) {
+            e.stopPropagation();
+            modal.style.display = 'block';
+            modalImg.src = this.src;
+            modalImg.alt = this.alt;
+        });
     });
 
-    // Close the image when clicking the X or the background
-    closeBtn.onclick = function() { 
-        modal.style.display = "none";
-    }
+    closeBtn.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
 
-    modal.onclick = function() {
-        modal.style.display = "none";
-    }
+    modal.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') modal.style.display = 'none';
+    });
+
 });
