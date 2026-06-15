@@ -31,9 +31,9 @@
     <section id="projects">
         <div class="container">
             <h2 class="section-title">My Creations</h2>
-            
+
             <div class="project-grid">
-                
+
                 <!-- Project 1 -->
                 <div class="project-card">
                     <div class="thumb-wrap">
@@ -134,13 +134,13 @@ My current focus is continuing to improve my modeling skills while creating clea
                     </div>
                     <div class="project-info">
                         <h3>Mars Tycoon Map</h3>
-                        <p>A client commission — a Mars-inspired tycoon map with snowy terrain, deep canyons, and a volcanic platform centerpiece, all modeled in Blender.</p>
+                        <p>A client commission — a Mars-inspired tycoon map with snowy terrain, deep canyons, and a volcanic platform centerpiece, built with Roblox's terrain tool and custom Blender props.</p>
                         <button class="btn toggle-details">View Details</button>
                     </div>
                     <div class="project-details">
                         <div class="details-inner">
                             <h4>About this Project</h4>
-                            <p>This map was created as a client commission for a Roblox tycoon game. The brief called for a Mars-inspired environment that balanced the harsh, alien feel of the red planet with unique biome variety to keep the map visually interesting across the full playing area.
+                            <p>This map was created as a client commission for a Roblox tycoon game. The brief called for a Mars-inspired environment with snowy areas, canyons, and a volcanic platform in the center.
 
 The terrain itself — the canyons, snow areas, and volcanic platform — was built entirely using Roblox's terrain tool, shaping the landscape directly to match the client's vision of a Mars-inspired environment.
 
@@ -176,9 +176,13 @@ This was my first delivered client project, and it was a good experience working
         </div>
     </footer>
 
+    <!-- Image Modal -->
     <div id="image-modal" class="modal">
         <span class="close-modal">&times;</span>
+        <button class="modal-arrow modal-prev" aria-label="Previous image">&#8592;</button>
         <img class="modal-content" id="full-image" alt="Full size view">
+        <button class="modal-arrow modal-next" aria-label="Next image">&#8594;</button>
+        <div class="modal-counter" id="modal-counter"></div>
     </div>
 
     <script src="script.js"></script>
