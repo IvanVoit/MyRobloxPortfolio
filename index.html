@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ivan | Roblox Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <nav>
         <div class="container">
-            <h1>Ivan</h1>
+            <div class="nav-logo">Ivan<span class="logo-dot">.</span></div>
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -22,8 +22,9 @@
 
     <header id="about">
         <div class="container">
-            <h2>About Me</h2>
-            <p>Welcome to my portfolio. I'm Ivan, a starting Roblox developer interested in building, low-poly 3D modeling, and game creation. I create environments and assets in Blender and work on interactive projects ranging from Roblox experiences to web-based games.</p>
+            <div class="hero-eyebrow">Roblox Developer &amp; 3D Artist</div>
+            <h2>Building worlds,<br>one polygon at a time.</h2>
+            <p>I'm Ivan — I create low-poly environments, game assets in Blender, and interactive Roblox experiences. From simulators to client maps, I focus on clean visuals and solid systems.</p>
         </div>
     </header>
 
@@ -35,11 +36,14 @@
                 
                 <!-- Project 1 -->
                 <div class="project-card">
-                    <img src="Images/Screenshot 2026-05-14 203258.png" class="main-thumb" alt="Project 1">
+                    <div class="thumb-wrap">
+                        <img src="Images/Screenshot 2026-05-14 203258.png" class="main-thumb" alt="Brainrot Simulator">
+                        <span class="project-tag">Roblox Game</span>
+                    </div>
                     <div class="project-info">
-                        <h3>Brainrot/Simulator Roblox Game</h3>
-                        <p>A Roblox jumping simulator project focused on progression, collectibles, and low-poly environments. The game features custom-made assets, upgrade systems, pets, and world progression mechanics.</p>
-                        <button class="btn toggle-details">View Project Details</button>
+                        <h3>Brainrot / Simulator Game</h3>
+                        <p>A progression-based jumping simulator with custom low-poly assets, pet systems, upgrade mechanics, and themed worlds.</p>
+                        <button class="btn toggle-details">View Details</button>
                     </div>
                     <div class="project-details">
                         <div class="details-inner">
@@ -62,11 +66,14 @@ The visual style focuses on a simple low-poly aesthetic with minimalistic enviro
 
                 <!-- Project 2 -->
                 <div class="project-card">
-                    <img src="Images/Screenshot 2026-05-14 202635.png" class="main-thumb" alt="Project 2">
+                    <div class="thumb-wrap">
+                        <img src="Images/Screenshot 2026-05-14 202635.png" class="main-thumb" alt="Website Game">
+                        <span class="project-tag">Web Game</span>
+                    </div>
                     <div class="project-info">
-                        <h3>Website Game</h3>
-                        <p>A browser-based multiplayer card game inspired by Clash Royale, featuring accounts, rankings, matchmaking, bots, and real-time gameplay systems.</p>
-                        <button class="btn toggle-details">View Project Details</button>
+                        <h3>Website Game — ClashToPlay</h3>
+                        <p>A browser-based multiplayer card game inspired by Clash Royale, featuring accounts, rankings, matchmaking, bots, and real-time gameplay.</p>
+                        <button class="btn toggle-details">View Details</button>
                     </div>
                     <div class="project-details">
                         <div class="details-inner">
@@ -89,11 +96,14 @@ The project was created primarily as a learning experience and as a way to explo
 
                 <!-- Project 3 -->
                 <div class="project-card">
-                    <img src="Images/Screenshot 2026-05-14 215606.png" class="main-thumb" alt="Project 3">
+                    <div class="thumb-wrap">
+                        <img src="Images/Screenshot 2026-05-14 215606.png" class="main-thumb" alt="3D Modeling">
+                        <span class="project-tag">Blender</span>
+                    </div>
                     <div class="project-info">
                         <h3>3D Modeling Assets</h3>
                         <p>A collection of low-poly 3D models and environment assets created in Blender for personal and game development projects.</p>
-                        <button class="btn toggle-details">View Project Details</button>
+                        <button class="btn toggle-details">View Details</button>
                     </div>
                     <div class="project-details">
                         <div class="details-inner">
@@ -106,9 +116,44 @@ Through these projects, I have been learning the fundamentals of modeling, asset
 
 My current focus is continuing to improve my modeling skills while creating clean and functional assets for game environments.</p>
                             <div class="image-gallery">
-                                <img src="Images/Gameboy.png" alt="Screen 1">
-                                <img src="Images/Screenshot 2026-05-14 215239.png" alt="Screen 2">
-                                <img src="Images/Screenshot 2026-05-14 215517.png" alt="Screen 3">
+                                <img src="Images/Gameboy.png" alt="Gameboy Model">
+                                <img src="Images/Screenshot 2026-05-14 215239.png" alt="Environment Assets">
+                                <img src="Images/Screenshot 2026-05-14 215517.png" alt="Scene Render">
+                                <img src="Images/marsrocks.png" alt="Mars Rocks">
+                                <img src="Images/icespikes.png" alt="Ice Spikes">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 — Mars Map -->
+                <div class="project-card featured-card">
+                    <div class="thumb-wrap">
+                        <img src="Images/marsmapthumbnail.png" class="main-thumb" alt="Mars Tycoon Map">
+                        <span class="project-tag client-tag">Client Work</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Mars Tycoon Map</h3>
+                        <p>A client commission — a Mars-inspired tycoon map with snowy terrain, deep canyons, and a volcanic platform centerpiece, all modeled in Blender.</p>
+                        <button class="btn toggle-details">View Details</button>
+                    </div>
+                    <div class="project-details">
+                        <div class="details-inner">
+                            <h4>About this Project</h4>
+                            <p>This map was created as a client commission for a Roblox tycoon game. The brief called for a Mars-inspired environment that balanced the harsh, alien feel of the red planet with unique biome variety to keep the map visually interesting across the full playing area.
+
+The terrain itself — the canyons, snow areas, and volcanic platform — was built entirely using Roblox's terrain tool, shaping the landscape directly to match the client's vision of a Mars-inspired environment.
+
+My Blender contribution focused on the props that populate the map. I modeled 4 different rock variants for the client to place and copy across the terrain, giving the environment natural-looking variety without repeating the same shape. For the icy zones I created 3 spike models, which I then arranged into 3 distinct spike groups with different combinations and scales so each cluster looks unique.
+
+The rest of the detail and atmosphere — the snow patches, canyon walls, lava platform — came from the terrain tool itself, with the Blender assets layered on top to break things up and add character.
+
+This was my first delivered client project, and it was a good experience working to someone else's brief and making sure the assets I handed over were easy for them to use.</p>
+                            <div class="image-gallery">
+                                <img src="Images/marsmapoverview.png" alt="Map Overview">
+                                <img src="Images/marsmapsnow.png" alt="Snow Zone">
+                                <img src="Images/marsmapcanyon1.png" alt="Canyon Section">
+                                <img src="Images/marsmapcanyon2.png" alt="Canyon Detail">
                             </div>
                         </div>
                     </div>
@@ -123,20 +168,17 @@ My current focus is continuing to improve my modeling skills while creating clea
             <h2>Get In Touch</h2>
             <p>Message me on Discord or Email for inquiries.</p>
             <div class="social-links">
-                <!-- Replace with your actual GitHub URL -->
                 <a href="https://github.com/IvanVoit" target="_blank">GitHub</a>
-                
                 <a href="mailto:0binirovoni0@gmail.com">Email</a>
-                
-                <!-- Discord usually requires a username or invite link -->
                 <a href="https://discord.com/users/ivanvoit" target="_blank">Discord</a>
             </div>
-            <p class="copyright">&copy; 2026 Ivan. Built with HTML/CSS and JavaScript.</p>
+            <p class="copyright">&copy; 2026 Ivan. Built with HTML, CSS &amp; JavaScript.</p>
         </div>
     </footer>
+
     <div id="image-modal" class="modal">
         <span class="close-modal">&times;</span>
-        <img class="modal-content" id="full-image">
+        <img class="modal-content" id="full-image" alt="Full size view">
     </div>
 
     <script src="script.js"></script>
